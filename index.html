@@ -25,7 +25,7 @@ data-relays="wss://relay.f7z.io,wss://nos.lol,wss://relay.nostr.band,wss://relay
 		<script>
 		  var main = function(){
 		      var instanceMusicSocket = function(){
-        let i = new WebSocket("wss://relay.damus.io");
+        let i = new WebSocket("wss://relayable.org");
         try{clearInterval(interval)}catch(_){}
         i.onopen = (event) => {
           functionInterval();
