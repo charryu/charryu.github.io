@@ -9,7 +9,13 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
 		<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-
+                <style>
+		        @media screen and (max-width: 500px) {
+		            #music-nostr {
+		                width: 90% !important;
+		            }
+		        }
+		</style>
 	</head>
 	<body>
 		hello world!
@@ -20,7 +26,7 @@ data-website-owner-pubkey="acc58208f995e9f8aae84b04fa45d0da14873a466cbe398b9770a
 data-relays="wss://relay.f7z.io,wss://nos.lol,wss://relay.nostr.band,wss://relay.0xchat.com"></script>
 
 		
-		<div id="music-nostr">Música...</div>
+		<div id="music-nostr" style="width: 500px; border-style: solid; padding: 10px; border-radius: 22px;">Música...</div>
 		
 		<script>
 		  var main = function(){
